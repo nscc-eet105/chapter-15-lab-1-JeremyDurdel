@@ -19,3 +19,10 @@ sales2 = employee.Salesperson('Judy Jetson', 30, 22.50, 4750.00, .05)
     results of the calc_pay method for each of them.
 '''
 
+people = [employee1, employee2, sales1, sales2]
+print()
+
+for person in people:
+    print(repr(person))
+    print(f"Total pay for {person.name} is ${person.calc_pay:.2f}.")
+    print("--------")
